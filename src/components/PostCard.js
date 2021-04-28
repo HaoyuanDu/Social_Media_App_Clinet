@@ -20,6 +20,7 @@ function PostCard({
           floated="right"
           size="mini"
           src="https://react.semantic-ui.com/images/avatar/large/molly.png"
+          alt = "Account picture"
         />
         <Card.Header>{username}</Card.Header>
         <Card.Meta as={Link} to={`/posts/${id}`}>
@@ -30,8 +31,8 @@ function PostCard({
       <Card.Content extra>
         <LikeButton user={user} post={{ id, likes, likeCount }} />
         <MyPopup content="Comment on post">
-          <Button labelPosition="right" as={Link} to={`/posts/${id}`}>
-            <Button color="blue" basic>
+          <Button aria-label="Post Button" labelPosition="right" as={Link} to={`/posts/${id}`}>
+            <Button  aria-label="Comment Button" color="blue" basic>
               <Icon name="comments" />
             </Button>
             <Label basic color="blue" pointing="left">
