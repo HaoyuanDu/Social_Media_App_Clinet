@@ -70,6 +70,7 @@ function SinglePost(props) {
               src="https://react.semantic-ui.com/images/avatar/large/molly.png"
               size="small"
               float="right"
+              alt = "Account Picture"
             />
           </Grid.Column>
           <Grid.Column width={10}>
@@ -107,7 +108,9 @@ function SinglePost(props) {
                   <p>Post a comment</p>
                   <Form>
                     <div className="ui action input fluid">
+                      <label for="commentForm" class="sr-only">Comment Input</label>
                       <input
+                        id = "commentForm"
                         type="text"
                         placeholder="Comment.."
                         name="comment"
