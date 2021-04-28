@@ -32,8 +32,10 @@ function PostForm() {
       <Form onSubmit={onSubmit}>
         <h2>Create a post:</h2>
         <Form.Field>
+          <label for="PostInput" class="sr-only">Post Input</label>
           <Form.Input
-            placeholder="Hi World!"
+            id="PostInput"
+            placeholder="Say Hi to your friends!"
             name="body"
             onChange={onChange}
             value={values.body}
