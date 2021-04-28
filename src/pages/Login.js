@@ -39,8 +39,11 @@ function Login(props) {
     <div className="form-container">
       <Form onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
         <h1>Login</h1>
+        <label for="UserName" class = "sr-only">Username</label>
+        <label for="PassWord" class = "sr-only">Password</label>
         <Form.Input
-          label="Username"
+          id="UserName"
+          {/*label="Username"*/}
           placeholder="Username.."
           name="username"
           type="text"
@@ -49,7 +52,8 @@ function Login(props) {
           onChange={onChange}
         />
         <Form.Input
-          label="Password"
+          id="PassWord"
+          {/*label="Password"*/}
           placeholder="Password.."
           name="password"
           type="password"
