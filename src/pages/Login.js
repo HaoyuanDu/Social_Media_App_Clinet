@@ -43,7 +43,7 @@ function Login(props) {
         <label for="PassWord" class = "sr-only">Password</label>
         <Form.Input
           id="UserName"
-          {/*label="Username"*/}
+          //label="Username"
           placeholder="Username.."
           name="username"
           type="text"
@@ -53,7 +53,7 @@ function Login(props) {
         />
         <Form.Input
           id="PassWord"
-          {/*label="Password"*/}
+          //label="Password"
           placeholder="Password.."
           name="password"
           type="password"
